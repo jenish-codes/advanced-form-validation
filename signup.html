@@ -5,8 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registiration Form Validation</title>
+    <link rel="stylesheet" href="./ccs/style.css">
 </head>
 <body>
-    
+    <div class="container">
+
+        <div class="form-box">
+
+            <form action="./pages/welcome.html" name="myForm" method="post" class="form" id="form">
+
+                <div class="header">
+                    <h2>Registiration Form</h2>
+                </div>
+
+                <div class="form-control">
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+                    <i class="fas fa-check-icon"></i>
+                    <i class="fas fa-exclamation-icon"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email ID">
+                    <i class="fas fa-check-icon"></i>
+                    <i class="fas fa-exclamation-icon"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Mobile Number</label>
+                    <input type="tel" name="mobile" id="mobile" placeholder="Enter your Mobile number">
+                    <i class="fas fa-check-icon"></i>
+                    <i class="fas fa-exclamation-icon"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="gender">Gender</label>
+                    
+                    <input type="radio" name="gender" id="gender" value="Male">
+                    <label> Male</label>
+
+                    <input type="radio" name="gender" id="gender" value="female">
+                    <label> Female</label>
+                </div>
+
+                <div class="form-control">
+                    <label for="nationality">Nationality</label>
+                    <select name="nationality" id="nationality">
+                        <option>Select</option>
+                        <option>Indian</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option>Select</option>
+                        <option>Tamilnadu</option>
+                        <option>Kerala</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label>Languages known</label>
+
+                    <input type="checkbox" id="tamil" name="tamil">
+                    <label for="tamil"> Tamil</label>
+
+                    <input type="checkbox" id="english" name="english">
+                    <label for="english"> English</label>
+
+                    <input type="checkbox" id="malayalam" name="malayalam">
+                    <label for="malayalam"> Malayalam</label>
+
+                </div>
+
+                <div class="form-control">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your Password">
+                    <i class="fas fa-check-icon"></i>
+                    <i class="fas fa-exclamation-icon"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Confirm Password</label>
+                    <input type="password" name="password2" id="password2" placeholder="Confirm your Password">
+                    <i class="fas fa-check-icon"></i>
+                    <i class="fas fa-exclamation-icon"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-agreement">
+                    <input type="checkbox" name="agreement" id="agreement" checked><label for="agreement"> I agree <a href="#" class="agreement">Terms & condition</a></label>
+                </div>
+
+                <div class="form-control">
+                    <input type="checkbox" id="acknowledge" name="acknowledge">
+                    <label> I am hearby declare the above details are correct</label>
+                </div>
+
+                <div class="submit">
+                    <button>Submit</button>
+                </div>
+            </form>
+
+        </div> <!--form-box-->
+    </div> <!--container --> 
+
+    <script src="./js/app.js"></script>
 </body>
 </html>
