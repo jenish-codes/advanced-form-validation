@@ -1,0 +1,88 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: sans-serif;
+    background: rgb(3, 77, 70);
+    font-size: 11.5pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10% auto;
+}
+
+.form {
+    width: 300px;
+}
+
+.header {
+    padding:0 10px 10px;
+    margin: 0 0 10px;
+}
+
+.header h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.form-control label, .form-control-select label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 10px;
+    font-size: 11pt;
+}
+
+.form-select {
+    border: 1px solid #333;
+}
+
+.form-select1 {
+    padding: 10px;
+}
+
+.form-select select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 11pt;
+}
+
+.form-submit button{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0 0;
+    border: none;
+    border-radius: 5px;
+    background: rgb(3, 77, 70);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+.form-submit button:hover {
+    background-color: #fff;
+    outline: 2px solid rgb(3, 77, 70);
+    color: #000;
+}

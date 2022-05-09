@@ -42,40 +42,50 @@
                     <small>Error Message</small>
                 </div>
 
-                <div class="form-control">
+                <div class="form-control-select">
                     <label for="gender">Gender</label>
                     
-                    <input type="radio" name="gender" id="gender" value="Male">
+                    <div class="form-select form-select1">
+                        <input type="radio" name="gender" id="gender" value="Male">
                     <label> Male</label>
 
                     <input type="radio" name="gender" id="gender" value="female">
                     <label> Female</label>
+                    </div>
+                    <small>Error Message</small>
                 </div>
 
-                <div class="form-control">
+                <div class="form-control-select">
                     <label for="nationality">Nationality</label>
-                    <select name="nationality" id="nationality">
-                        <option>Select</option>
-                        <option>Indian</option>
-                        <option>Other</option>
-                    </select>
+                    <div class="form-select">
+                        <select name="nationality" id="nationality">
+                            <option>Select</option>
+                            <option>Indian</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <small>Error Message</small>
                 </div>
 
-                <div class="form-control">
+                <div class="form-control-select">
                     <label for="state">State</label>
-                    <select name="state" id="state">
-                        <option>Select</option>
-                        <option>Tamilnadu</option>
-                        <option>Kerala</option>
-                        <option>Other</option>
-                    </select>
+                    <div class="form-select">
+                        <select name="state" id="state">
+                            <option>Select</option>
+                            <option>Tamilnadu</option>
+                            <option>Kerala</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <small>Error Message</small>
                 </div>
 
-                <div class="form-control">
+                <div class="form-control-select">
                     <label>Languages known</label>
 
-                    <input type="checkbox" id="tamil" name="tamil">
-                    <label for="tamil"> Tamil</label>
+                    <div class="form-select form-select1">
+                        <input type="checkbox" id="tamil" name="tamil">
+                    <label for="tamil"> Tamil </label>
 
                     <input type="checkbox" id="english" name="english">
                     <label for="english"> English</label>
@@ -83,6 +93,8 @@
                     <input type="checkbox" id="malayalam" name="malayalam">
                     <label for="malayalam"> Malayalam</label>
 
+                    </div>
+                    <small>Error Message</small>
                 </div>
 
                 <div class="form-control">
@@ -101,16 +113,16 @@
                     <small>Error Message</small>
                 </div>
 
-                <div class="form-agreement">
+                <div class="form-check">
                     <input type="checkbox" name="agreement" id="agreement" checked><label for="agreement"> I agree <a href="#" class="agreement">Terms & condition</a></label>
                 </div>
 
-                <div class="form-control">
+                <div class="form-check">
                     <input type="checkbox" id="acknowledge" name="acknowledge">
                     <label> I am hearby declare the above details are correct</label>
                 </div>
 
-                <div class="submit">
+                <div class="form-submit">
                     <button>Submit</button>
                 </div>
             </form>
