@@ -42,62 +42,73 @@
                     <small>Error Message</small>
                 </div>
 
-                <div class="form-control-select">
-                    <label for="gender">Gender</label>
-                    
-                    <div class="form-select form-select1">
-                        <input type="radio" name="gender" id="gender" value="Male">
-                    <label> Male</label>
+                <div class="form-control-select ">
+                    <label for="gender">Gender</label> 
+                        <div class="form-select form-select1">
+                            <div>
+                                <input type="radio" name="gender" id="male" value="Male">
+                            <label for="male"> Male</label>
+                            </div>
 
-                    <input type="radio" name="gender" id="gender" value="female">
-                    <label> Female</label>
-                    </div>
+                            <div>
+                                <input type="radio" name="gender" id="female" value="female">
+                            <label for="female"> Female</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="gender" id="other" value="Other">
+                            <label for="other"> Other</label>
+                            </div>
+                        </div>
                     <small>Error Message</small>
                 </div>
 
-                <div class="form-control-select">
+                <div class="form-control-select ">
                     <label for="nationality">Nationality</label>
-                    <div class="form-select">
-                        <select name="nationality" id="nationality">
-                            <option>Select</option>
-                            <option>Indian</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
+                        <div class="form-select">
+                            <select name="nationality" id="nationality">
+                                <option>Select</option>
+                                <option>Indian</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
                     <small>Error Message</small>
                 </div>
 
                 <div class="form-control-select">
                     <label for="state">State</label>
-                    <div class="form-select">
-                        <select name="state" id="state">
-                            <option>Select</option>
-                            <option>Tamilnadu</option>
-                            <option>Kerala</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
+                        <div class="form-select">
+                            <select name="state" id="state">
+                                <option>Select</option>
+                                <option>Tamilnadu</option>
+                                <option>Kerala</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
                     <small>Error Message</small>
                 </div>
 
                 <div class="form-control-select">
                     <label>Languages known</label>
+                        <div class="form-select form-select1">
+                            <div>
+                                <input type="checkbox" id="tamil" name="tamil">
+                            <label for="tamil"> Tamil </label>
+                            </div>
 
-                    <div class="form-select form-select1">
-                        <input type="checkbox" id="tamil" name="tamil">
-                    <label for="tamil"> Tamil </label>
+                            <div><input type="checkbox" id="english" name="english">
+                                <label for="english"> English</label>
+                            </div>
 
-                    <input type="checkbox" id="english" name="english">
-                    <label for="english"> English</label>
-
-                    <input type="checkbox" id="malayalam" name="malayalam">
-                    <label for="malayalam"> Malayalam</label>
-
-                    </div>
+                            <div>
+                                <input type="checkbox" id="malayalam" name="malayalam">
+                            <label for="malayalam"> Malayalam</label>
+                            </div>
+                        </div>
                     <small>Error Message</small>
                 </div>
 
-                <div class="form-control">
+                <div class="form-control ">
                     <label>Password</label>
                     <input type="password" name="password" id="password" placeholder="Enter your Password">
                     <i class="fas fa-check-icon"></i>
@@ -113,13 +124,22 @@
                     <small>Error Message</small>
                 </div>
 
-                <div class="form-check">
-                    <input type="checkbox" name="agreement" id="agreement" checked><label for="agreement"> I agree <a href="#" class="agreement">Terms & condition</a></label>
+                <div class="form-check form-check-1">
+                    <input type="checkbox" name="agreement" id="agreement" >
+                    <label for="agreement">
+                        <small>
+                            I agree <a href="#" class="agreement">Terms & condition</a>
+                        </small>
+                    </label>
                 </div>
 
                 <div class="form-check">
                     <input type="checkbox" id="acknowledge" name="acknowledge">
-                    <label> I am hearby declare the above details are correct</label>
+                    <label><small> I acknowledge that the details are correct</small></label>
+                </div>
+
+                <div class="form-control-select check-error">
+                    <small>Error Message</small>
                 </div>
 
                 <div class="form-submit">

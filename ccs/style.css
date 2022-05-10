@@ -49,20 +49,29 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 11pt;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 3px;
+    background-color: rgba(99, 99, 99, 0.164);
 }
 
 .form-select {
-    border: 1px solid #333;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 3px;
+    background-color: rgba(99, 99, 99, 0.164);
 }
 
 .form-select1 {
-    padding: 10px;
+    padding: 10px 0 5px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .form-select select {
     width: 100%;
     padding: 10px;
     border: none;
+    border-radius: 4px;
+    background-color: rgba(99, 99, 99, 0);
     font-size: 11pt;
 }
 
@@ -81,8 +90,63 @@ body {
     cursor: pointer;
 }
 
+.form-check {
+    text-align: center;
+}
+
+.form-check-1 {
+    margin: 20px 0px 0px;
+}
+
+.check-error {
+    text-align: center;
+}
+
 .form-submit button:hover {
-    background-color: #fff;
-    outline: 2px solid rgb(3, 77, 70);
-    color: #000;
+    background-color:  rgb(7, 36, 33);
+}
+
+
+
+
+
+/* success */
+
+.form-control.success input {
+    border: 1px solid rgb(0, 255, 0);
+}
+
+.form-control.success small {
+    visibility: hidden;
+}
+
+.form-control-select.success .form-select{
+    border: 1px solid rgb(0, 255, 0);
+}
+
+.form-control-select.success small {
+    visibility: hidden;
+}
+
+
+
+
+/* error  */
+
+.form-control.error input {
+    border: 1px solid red;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: red;
+}
+
+.form-control-select.error .form-select{
+    border: 1px solid red;
+}
+
+.form-control-select.error small {
+    visibility: visible;
+    color: red;
 }
