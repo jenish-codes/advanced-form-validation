@@ -40,6 +40,10 @@ body {
     letter-spacing: 1px;
 }
 
+/* .form-control, .form-control-select {
+    position: relative;
+} */
+
 .form-control label, .form-control-select label {
     display: inline-block;
     margin-bottom: 5px;
@@ -51,13 +55,13 @@ body {
     font-size: 11pt;
     border: 1px solid rgb(150, 150, 150);
     border-radius: 3px;
-    background-color: rgba(99, 99, 99, 0.164);
+    background-color: rgba(143, 143, 143, 0.164);
 }
 
 .form-select {
     border: 1px solid rgb(150, 150, 150);
     border-radius: 3px;
-    background-color: rgba(99, 99, 99, 0.164);
+    background-color: rgba(141, 141, 141, 0.164);
 }
 
 .form-select1 {
@@ -71,8 +75,16 @@ body {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: rgba(99, 99, 99, 0);
+    background-color: rgba(129, 129, 129, 0);
     font-size: 11pt;
+}
+
+.form-control, .form-control-select {
+    margin-bottom: 10px;
+}
+
+.form-control small, .form-control-select small {
+    display: none;
 }
 
 .form-submit button{
@@ -117,7 +129,8 @@ body {
 }
 
 .form-control.success small {
-    visibility: hidden;
+    display: none;
+    transition: ease-out 1s ;
 }
 
 .form-control-select.success .form-select{
@@ -125,7 +138,8 @@ body {
 }
 
 .form-control-select.success small {
-    visibility: hidden;
+    display: none;
+    transition: ease-out 1s ;
 }
 
 
@@ -138,15 +152,23 @@ body {
 }
 
 .form-control.error small {
-    visibility: visible;
+    display: block;
+    transition: ease-in 1s ;
     color: red;
 }
+
+
 
 .form-control-select.error .form-select{
     border: 1px solid red;
 }
 
 .form-control-select.error small {
-    visibility: visible;
+    display: block;
+    transition: ease-in 1s ;
     color: red;
+}
+
+.form-control.error, .form-control-select.error {
+    margin-bottom: 0;
 }
