@@ -61,16 +61,38 @@ function validateForm(){
 
 //Gender validation
 
-    // const male = document.getElementById('male');
-    // const female = document.getElementById('female');
-    // const other = document.getElementById('other');
-    // if(gender == ''){
-    //     setErrorForSelect(gender,'Select your gender!');
-    // }
-    // else{
-    //     setSuccessForSelect(gender);
-    // }
+    const male = document.getElementById('male');
+    const female = document.getElementById('female');
+    const other = document.getElementById('other');
+    if(male.checked || female.checked || other.checked){
+        setSuccessForSelect(gender);
+    }
+    else{
+        setErrorForSelect(gender,'Select your gender!');
+    }
 
+
+//Nationality
+
+    // if()
+
+
+
+
+// languages known
+
+
+
+    const tamil = document.getElementById('tamil');
+    const english = document.getElementById('english');
+    const malayalam = document.getElementById('malayalam');
+
+    if(tamil.checked || english.checked ||  malayalam.checked){
+        setSuccessForSelect(languages);
+    }
+    else{
+        setErrorForSelect(languages,'Must select atleast one language');
+    }
 
     // password validation
     if (passwordValue == ''){
